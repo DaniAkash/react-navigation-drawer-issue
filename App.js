@@ -14,7 +14,11 @@ const AppDrawerNavigator = createDrawerNavigator({
   },
 }, {
   initialRouteName: "Home",
-  contentComponent: Drawer
+  contentComponent: Drawer,
+  defaultNavigationOptions: {
+    gesturesEnabled: true,
+    drawerLockMode: "locked-closed"
+  },
 });
 
 const AppContainer = createAppContainer(AppDrawerNavigator);

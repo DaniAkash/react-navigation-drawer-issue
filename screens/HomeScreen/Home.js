@@ -45,8 +45,8 @@ class Home extends Component {
             style={styles.scrollView}>
             <Header />
             <Button
-              onPress={() => this.props.navigation.navigate('About')}
-              title="Go to About"
+              onPress={() => this.props.navigation.openDrawer()}
+              title="Open Drawer"
             />
             <View style={styles.body}>
               <View style={styles.sectionContainer}>
